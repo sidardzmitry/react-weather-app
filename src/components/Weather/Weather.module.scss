@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+
+
+.weather {
+    position: relative;
+    margin: 0 auto;
+    background-color: $--color-white;
+    max-width: 500px;
+    min-height: 500px;
+    border-radius: $--border-radius;
+    box-shadow: $--box-shadow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .3s all;
+    .weather__search_icon {
+        position: absolute;
+        top: 1rem;
+    }
+    &:hover {
+        cursor: pointer;
+        box-shadow: rgba(247, 247, 247, 1) 0px 4px 28px;
+    }
+}
+
+@media(max-width: 468px) {
+    .weather{
+        .weather__search_icon{}
+    }
+}

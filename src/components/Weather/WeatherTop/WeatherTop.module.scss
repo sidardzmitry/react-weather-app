@@ -1,0 +1,79 @@
+@import '../../../styles/variables.scss';
+
+.top {
+    background-color: $--color-primary;
+    width: 100%;
+    padding: 30px;
+    height: 50%;
+    border-radius: 0 0 50% 0;
+    &__one{
+        margin-bottom: 24px;
+        .one__wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        .one__text{
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .one__city{
+            font-size: 48px;
+            font-weight: 400;
+        }
+        .one__search{
+            cursor: pointer;
+            font-size: 22px;
+        }
+    }
+    &__two{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .top__two_left{
+            .two__left_img{
+                margin-bottom: 8px;
+                svg {
+                    width: 70px;
+                    height: 100px;
+                }
+            }
+            .two__left_name{
+                font-size: 24px;
+            }
+        }
+        .top__two_right{
+            .two__right_time{
+                margin-bottom: 8px;
+                font-size: 14px;
+            }
+            .two__right_temp{
+                font-size: 80px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+.search__icon{
+    font-size: 22px;
+}
+
+@media(max-width: 468px) {
+    .top {
+        &__two{
+            .top__two_left{
+                .two__left_name{
+                    font-size: 18px;
+                }
+            }
+            .top__two_right{
+                .two__right_time{
+                    font-size: 14px;
+                }
+                .two__right_temp{
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+}

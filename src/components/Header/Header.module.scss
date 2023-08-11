@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    &__title{
+        font-size: 40px;
+        text-shadow: $--text-shadow;
+    }
+}
+@media(max-width: 468px) {
+    .header{
+        &__title{
+            font-size: 32px;
+        }
+    }
+}
+@media(max-width: 380px) {
+    .header{
+        &__title{
+            font-size: 27px;
+        }
+    }
+}
